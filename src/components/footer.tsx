@@ -16,6 +16,7 @@ const Footer = () => {
       site {
         siteMetadata {
           title
+          siteUrl
         }
       }
     }
@@ -24,7 +25,11 @@ const Footer = () => {
   return (
     <FooterContainer>
       <Copyright>
-        © {new Date().getFullYear()}, {data.site.siteMetadata.title}
+        <a href={data.site.siteMetadata.siteUrl}>
+          {data.site.siteMetadata.title}
+        </a> | <a href="https://www.gatsbyjs.org">
+          Gatsby
+        </a>
       </Copyright>
     </FooterContainer>
   )
