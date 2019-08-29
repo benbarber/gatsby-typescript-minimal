@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Typescript Minimal`,
     description: `A minimal, bare bones Typescript starter for Gatsby`,
     author: `@benbarber`,
+    siteUrl: `http://localhost:8000` // Required by gatsby-plugin-sitemap
   },
   plugins: [
     `gatsby-plugin-typescript`,
