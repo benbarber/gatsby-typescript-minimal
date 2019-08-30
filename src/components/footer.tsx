@@ -25,10 +25,12 @@ const Footer = () => {
   return (
     <FooterContainer>
       <Copyright>
-        <a href={data.site.siteMetadata.siteUrl}>
-          {data.site.siteMetadata.title}
-        </a> | <a href="https://www.gatsbyjs.org">
-          Gatsby
+        <a href={data.site.siteMetadata.siteUrl + '/generate'}>
+          Use this Template
+        </a> | <a href={data.site.siteMetadata.siteUrl + '/issues'}>
+          Report an Issue
+        </a> | <a href="https://www.gatsbyjs.org/docs/">
+          Gatsby Docs
         </a>
       </Copyright>
     </FooterContainer>
